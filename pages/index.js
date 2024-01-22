@@ -1,7 +1,10 @@
 // npm run dev
+// npm test
 
 function Home() {
-  return <h1>Vitoria é um nome incrível para uma amiga muito incrível❤️</h1>;
+  return (
+    <h1>One often meets his destiny on the road he takes to avoid it. 🐢</h1>
+  );
 }
 
 export default Home;
