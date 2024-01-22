@@ -1,5 +1,5 @@
 // npm run dev
-// npm test
+// npm run test:watch
 
 function Home() {
   return (
