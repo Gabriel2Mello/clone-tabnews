@@ -1,17 +1,26 @@
-test("espero que 1 seja 1", () => {
-  expect(1).toBe(1);
+const calculadora = require("../models/calculadora.js");
+
+test("somar 2 + 2 deveria retornar 4", () => {
+  const result = calculadora.somar(2, 2);
+  expect(result).toBe(4);
 });
 
-test("Mais próximo do real", () => {
-  //console.log("Real");
+test("somar 2 + 2 deveria retornar 4", () => {
+  const result = calculadora.somar(2, 2);
+  expect(result).toBe(4);
 });
 
-test("nome do teste", function () {
-  //console.log("e assim, funciona?");
+test("somar 'banana' + 100 deveria retornar 'Erro'", () => {
+  const result = calculadora.somar("banana", 100);
+  expect(result).toBe("Erro");
 });
 
-test("outro teste", callbackFunction);
+test("somar 100 + '' deveria retornar 'Erro'", () => {
+  const result = calculadora.somar(100, "");
+  expect(result).toBe("Erro");
+});
 
-function callbackFunction() {
-  //console.log("Foi chamada");
-}
+test("somar '' + 100 deveria retornar 'Erro'", () => {
+  const result = calculadora.somar("", 100);
+  expect(result).toBe("Erro");
+});
