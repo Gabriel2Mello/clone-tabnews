@@ -1,4 +1,4 @@
-// docker compose up -d
+// npm run services:up
 // npm run dev
 // npm run test:watch
 
